@@ -1,7 +1,7 @@
 <?php
 
 
-function mapreduce_collection_menu_filter($items, $dbName, $collectionName) {
+function mapreduce_collection_menu_filter(&$items, $dbName, $collectionName) {
 	$items[] = array(
 		"action" => "@mapreduce.index.index",
 		"name" => "MapReduce",
@@ -9,7 +9,7 @@ function mapreduce_collection_menu_filter($items, $dbName, $collectionName) {
 	);
 }
 
-function mapreduce_manual_menu_filter($items) {
+function mapreduce_manual_menu_filter(&$items) {
 	$items[] = '<a href="http://www.mongodb.org/display/DOCS/MapReduce" target="_blank">MapReduce</a>';
 }
 

@@ -8,7 +8,7 @@ if ($collection != "system.js") {
 	return;
 }
 
-function systemjs_collection_menu_filter($items, $dbName, $collectionName) {
+function systemjs_collection_menu_filter(&$items, $dbName, $collectionName) {
 	$items[] = array(
 		"action" => "@systemjs.index.add",
 		"params" => array( "db" => $dbName, "collection" => $collectionName ),
@@ -20,7 +20,7 @@ function systemjs_collection_menu_filter($items, $dbName, $collectionName) {
 	);
 }
 
-function systemjs_doc_menu_filter($items, $dbName, $collectionName, $docId, $docIndex) {
+function systemjs_doc_menu_filter(&$items, $dbName, $collectionName, $docId, $docIndex) {
 	$items[] = array(
 		"action" => "@systemjs.index.modify",
 		"params" => array( "db" => $dbName, "collection" => $collectionName, "docId" => $docId ),

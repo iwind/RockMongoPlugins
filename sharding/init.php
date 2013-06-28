@@ -1,6 +1,6 @@
 <?php
 
-function sharding_server_menu_filter ($items) {
+function sharding_server_menu_filter (&$items) {
 	$items[] = array(
 		"action" => "@sharding.index.index",
 		"params" => array(),
@@ -8,7 +8,7 @@ function sharding_server_menu_filter ($items) {
 	);
 }
 
-function sharding_db_menu_filter($items, $dbName) {
+function sharding_db_menu_filter(&$items, $dbName) {
 	if (in_array($dbName, array( "admin", "local", "config"))) {
 		return;
 	}
@@ -35,7 +35,7 @@ function sharding_db_menu_filter($items, $dbName) {
 	}
 }
 
-function sharding_collection_menu_filter($items, $dbName, $collectionName) {
+function sharding_collection_menu_filter(&$items, $dbName, $collectionName) {
 	//sharded?
 	$server = MServer::currentServer();
 	$namespace = $dbName . "." . $collectionName;
