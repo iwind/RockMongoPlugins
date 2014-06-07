@@ -9,6 +9,7 @@ if ($collection != "system.js") {
 }
 
 function systemjs_collection_menu_filter(&$items, $dbName, $collectionName) {
+	$items[] = "-";
 	$items[] = array(
 		"action" => "@systemjs.index.add",
 		"params" => array( "db" => $dbName, "collection" => $collectionName ),
