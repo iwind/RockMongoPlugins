@@ -2,11 +2,11 @@
 
 return array(
 	"name" => "ACE Plugin",
-	"code" => "ace",
+	"code" => "ace-editor",
 	"description" => "Add ACE editor to RockMongo",
 	"version" => "1.0",
 	"author" => "Evan",
-	"url" => "http://rockmongo.com/plugins/2"
+	"url" => "http://rockmongo.com/plugins/1"
 );
 
 ?>
