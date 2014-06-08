@@ -26,31 +26,31 @@
 <table bgcolor="#cccccc" cellpadding="2" cellspacing="1">
 	<tr bgcolor="#fffeee">
 		<td valign="top">Collection <font color="blue">*</font>:</td>
-		<td><input type="text" name="collection" value="<?php h($collection_name); ?>"/></textarea></td>
+		<td><input type="text" name="collection" value="<?php h_escape($collection_name); ?>"/></textarea></td>
 	</tr>
 	<tr bgcolor="#fffeee">
 		<td valign="top">Map Function <font color="blue">*</font>:</td>
-		<td><textarea name="map_function" rows="5" cols="60"><?php h($map_function) ?></textarea></td>
+		<td><textarea name="map_function" rows="5" cols="60"><?php h_escape($map_function) ?></textarea></td>
 	</tr>
 	<tr bgcolor="#fffeee">
 		<td valign="top">Reduce Function <font color="blue">*</font>:</td>
-		<td><textarea name="reduce_function" rows="5" cols="60"><?php h($reduce_function) ?></textarea></td>
+		<td><textarea name="reduce_function" rows="5" cols="60"><?php h_escape($reduce_function) ?></textarea></td>
 	</tr>
 	<tr bgcolor="#ffffff">
 		<td valign="top">Query Filter:</td>
-		<td><textarea name="query_filter" rows="5" cols="60"><?php h($query_filter) ?></textarea></td>
+		<td><textarea name="query_filter" rows="5" cols="60"><?php h_escape($query_filter) ?></textarea></td>
 	</tr>
 	<tr bgcolor="#ffffff">
 		<td valign="top">Sort:</td>
-		<td><textarea name="sort" rows="5" cols="60"><?php h($sort) ?></textarea></td>
+		<td><textarea name="sort" rows="5" cols="60"><?php h_escape($sort) ?></textarea></td>
 	</tr>
 	<tr bgcolor="#ffffff">
 		<td valign="top">Limit:</td>
-		<td><input type="text" name="limit" value="<?php h($limit) ?>"/></td>
+		<td><input type="text" name="limit" value="<?php h_escape($limit) ?>"/></td>
 	</tr>
 	<tr bgcolor="#ffffff">
 		<td valign="top">Out Options:</td>
-		<td><textarea name="out_options" rows="5" cols="60"><?php h($out_options) ?></textarea></td>
+		<td><textarea name="out_options" rows="5" cols="60"><?php h_escape($out_options) ?></textarea></td>
 	</tr>
 	<tr bgcolor="#ffffff">
 		<td>Keeptemp:</td>
@@ -58,11 +58,11 @@
 	</tr>
 	<tr bgcolor="#ffffff">
 		<td valign="top">Finalize Function:</td>
-		<td><textarea name="finalize_function" rows="5" cols="60"><?php h($finalize_function) ?></textarea></td>
+		<td><textarea name="finalize_function" rows="5" cols="60"><?php h_escape($finalize_function) ?></textarea></td>
 	</tr>
 	<tr bgcolor="#ffffff">
 		<td valign="top">Scope Variables:</td>
-		<td><textarea name="scope_vars" rows="5" cols="60"><?php h($scope_vars) ?></textarea></td>
+		<td><textarea name="scope_vars" rows="5" cols="60"><?php h_escape($scope_vars) ?></textarea></td>
 	</tr>
 	<tr bgcolor="#ffffff">
 		<td>Js Mode:</td>
