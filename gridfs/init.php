@@ -142,13 +142,23 @@ HTML;
  */
 function gridfs_collection_menu_filter(&$items, $dbName, $collectionName) {
 	//Replace "Insert" with "Upload"
+
+	$uploadIndex = 0;
 	foreach ($items as $index => $item) {
 		if ($item["action"] == "collection.createRow") {
 			$item["name"] = gridfs_lang("upload");
 			$item["action"] = "@gridfs.doc.upload";
+
+			$uploadIndex = $index;
 		}
 		$items[$index] = $item;
 	}
+	/**array_splice($items, $uploadIndex + 1, 0, array(
+		array (
+			"name" => "Touch",
+			"action" => "@gridfs.doc.touch"
+		)
+	));**/
 }
 
 function gridfs_lang($code) {
