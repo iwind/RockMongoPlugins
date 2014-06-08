@@ -12,9 +12,10 @@ $(function () {
 		var textarea = $("#row_data");
 		var newId = "row_data_editor";
 		var pre = $(document.createElement("pre"));
-		pre.css("border", "1px #666 solid");
+		pre.css("border", "1px #ccc solid");
 		pre.css("width", textarea.width());
 		pre.css("height", textarea.height());
+		pre.css("margin", "0px");
 		pre.insertBefore(textarea);
 		pre.attr("id", newId);
 		pre.text(textarea.val());
@@ -51,6 +52,7 @@ $(function () {
 		pre.css("border", "1px #ccc solid");
 		pre.css("width", textarea.width());
 		pre.css("height", textarea.height());
+		pre.css("margin", "0px");
 		pre.insertBefore(textarea);
 		pre.attr("id", newId);
 		pre.text(textarea.val());
