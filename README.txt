@@ -4,3 +4,5 @@ For plugin developers: http://rockmongo.com/wiki/pluginDevelop?lang=en_us
 For plugin users: http://rockmongo.com/wiki/pluginUsage?lang=en_us
 
 Questions please go to iwind.liu@gmail.com
+
+Please download packages by clicking "Download Zip" on the right.
